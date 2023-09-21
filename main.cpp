@@ -172,7 +172,7 @@ int main(int argc, char** argv)
         cv::putText(m, cv::format("FPS %0.2f", f/16),cv::Point(10,20),cv::FONT_HERSHEY_SIMPLEX,0.6, cv::Scalar(0, 0, 255));
 
         cv::imshow("RPi4 - 1.95 GHz - 2 GB ram",m);
-        if(f/16>24.0) cv::imwrite("test.jpg",m);
+        //cv::imwrite("test.jpg",m);
         char esc = cv::waitKey(5);
         if(esc == 27) break;
     }
